@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   
   #Simple Route
   get 'demo/index' #short match route
+  get 'demo/hello'
+  get 'demo/other_hello'
+  get 'demo/lynda'
 
   # get ':controller(/:action(/:id))'
   # Simple route
