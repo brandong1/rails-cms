@@ -6,6 +6,11 @@
 <% target = "world" %>
 <%= "Hello #{target}" %>
 <br>
-<% 3.times do |n| %>
-    <%= n %>
+<% @array.each do |n| %>
+    <%= n %><br>
 <% end %>
+
+<!-- this will work, but not rails convention -->
+<!-- <a href="/demo/index">index page</a> -->
+<br>
+<%= link_to('Index page', {:action => 'index'}) %><br>
