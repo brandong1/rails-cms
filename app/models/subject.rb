@@ -1,4 +1,7 @@
 class Subject < ApplicationRecord
+
+    has_one :page
+
     scope :visible, lambda { where(:visible => true)}
     # Ex:- scope :active, -> {where(:active => true)}
     scope :invisible, lambda { where(:visible => false)}
