@@ -2,12 +2,16 @@ Rails.application.routes.draw do
   
   # Root Route
   root "demo#index"
-  
+
+  # This code block creates all 8 routes for our SubjectController
+  resources :subjects do
+    member do
+      get :delete
+    end
+  end
+
   #Simple Route
-  get 'demo/index' #short match route
-  get 'demo/hello'
-  get 'demo/other_hello'
-  get 'demo/lynda'
+  # get 'demo/index' #short match route
 
   # get ':controller(/:action(/:id))'
   # Simple route
