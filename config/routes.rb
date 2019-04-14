@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   # Root Route
-  root "subject#index"
+  root "subjects#index"
 
   # This code block creates all 8 routes for our SubjectController
   resources :subjects do
